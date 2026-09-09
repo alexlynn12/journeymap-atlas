@@ -1,18 +1,284 @@
 {
  "waypoints": [
   {
-   "id": "445b8eae-6bd1-4a39-b437-9cf43d3e1913",
-   "name": "Death 12:49:30 09-09-2026",
-   "x": 86,
-   "y": 42,
-   "z": 0,
-   "dimension": "the_nether",
+   "id": "8df32dee-b272-41cb-9bc9-bff7f8bb06e0",
+   "name": "Alex's House",
+   "x": 413,
+   "y": 107,
+   "z": 421,
+   "dimension": "overworld",
    "dimensions": [
-    "the_nether"
+    "overworld"
    ],
-   "group": "journeymap_death",
-   "color": "#643c2b",
-   "death": true
+   "group": "journeymap_default",
+   "color": "#81ca52",
+   "death": false
+  },
+  {
+   "id": "df915062-2506-4a5b-8ec7-bdd3aff2b10c",
+   "name": "Armory",
+   "x": 496,
+   "y": 101,
+   "z": 411,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#8c99b3",
+   "death": false
+  },
+  {
+   "id": "213d0c95-81d7-4fe6-8d4e-9f53805ca45f",
+   "name": "Austin's House",
+   "x": 329,
+   "y": 125,
+   "z": 316,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#49706c",
+   "death": false
+  },
+  {
+   "id": "e1ff284a-69df-49fa-a07a-a6de573d6fcb",
+   "name": "Auto Storage",
+   "x": 499,
+   "y": 104,
+   "z": 281,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#7cec76",
+   "death": false
+  },
+  {
+   "id": "0e080a72-ad27-447a-9857-ec5a796ac460",
+   "name": "Auto-Smelter",
+   "x": 474,
+   "y": 101,
+   "z": 407,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#c0adf1",
+   "death": false
+  },
+  {
+   "id": "c8d3dad3-361a-4e65-a59d-c8a076174839",
+   "name": "Bee Farm",
+   "x": 549,
+   "y": 100,
+   "z": 454,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#46f48a",
+   "death": false
+  },
+  {
+   "id": "9eb805a2-063c-4c83-b1ef-34561b4608d1",
+   "name": "Bifrost",
+   "x": 221,
+   "y": 61,
+   "z": 363,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#e55bc3",
+   "death": false
+  },
+  {
+   "id": "2bb94bc5-7e5b-488c-9bb9-54a84fe67fc2",
+   "name": "Cow Farm",
+   "x": 478,
+   "y": 94,
+   "z": 311,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#c1e325",
+   "death": false
+  },
+  {
+   "id": "d9072805-cb99-4622-9fb8-08a38a29b0aa",
+   "name": "Crop Farm",
+   "x": 511,
+   "y": 92,
+   "z": 444,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#89a476",
+   "death": false
+  },
+  {
+   "id": "bb465a56-c3ab-4a3d-8a6d-8acb76a1c940",
+   "name": "Ink Farm",
+   "x": -251,
+   "y": 174,
+   "z": 99,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#61e0df",
+   "death": false
+  },
+  {
+   "id": "a547a0c8-da0f-4412-b225-bc37223daeb8",
+   "name": "Iron Farm",
+   "x": 575,
+   "y": 103,
+   "z": 464,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#4d6403",
+   "death": false
+  },
+  {
+   "id": "6ad98018-3f66-44a1-92e9-96a4542625c9",
+   "name": "Mia's House",
+   "x": 430,
+   "y": 128,
+   "z": 248,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#dab1dc",
+   "death": false
+  },
+  {
+   "id": "cfc74c26-798e-485d-b7e5-9a7294aa9ed7",
+   "name": "Mineshaft",
+   "x": 437,
+   "y": 90,
+   "z": 340,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#88483f",
+   "death": false
+  },
+  {
+   "id": "3f61ae95-b174-4e60-b708-62b209399804",
+   "name": "Nether Portal",
+   "x": 507,
+   "y": 118,
+   "z": 363,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#62018c",
+   "death": false
+  },
+  {
+   "id": "ada9d8d4-7123-452c-99d2-0a16e8151864",
+   "name": "Outpost",
+   "x": 539,
+   "y": 108,
+   "z": 366,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#06ace4",
+   "death": false
+  },
+  {
+   "id": "c0eb7c90-58cc-4fed-8383-ec40c01f18b1",
+   "name": "Sea Pickle Farm",
+   "x": 424,
+   "y": 113,
+   "z": 478,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#c2e6ec",
+   "death": false
+  },
+  {
+   "id": "f7611607-d02b-4a1b-8c8b-b9362905637f",
+   "name": "Sugarcane/Bamboo Farm",
+   "x": 519,
+   "y": 110,
+   "z": 418,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#fdd6f7",
+   "death": false
+  },
+  {
+   "id": "ee6ba540-8ab3-4a3b-a326-20ff4fdf244d",
+   "name": "Trading Hall",
+   "x": 526,
+   "y": 104,
+   "z": 394,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#de146a",
+   "death": false
+  },
+  {
+   "id": "696a790e-0eb3-4924-a4a7-581f47fba096",
+   "name": "Underground Crop Farm",
+   "x": 509,
+   "y": 98,
+   "z": 413,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#1d68a0",
+   "death": false
+  },
+  {
+   "id": "b7498a64-561a-4a44-b209-49a3cbb4fa43",
+   "name": "Woodland Mansion",
+   "x": 635,
+   "y": 132,
+   "z": 456,
+   "dimension": "overworld",
+   "dimensions": [
+    "overworld"
+   ],
+   "group": "journeymap_default",
+   "color": "#25259c",
+   "death": false
   }
  ],
  "groups": [
