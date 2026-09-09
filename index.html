@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>JourneyMap Atlas</title>
+<meta name="description" content="An interactive, shareable map of our Minecraft world, rendered from JourneyMap.">
+<meta property="og:title" content="JourneyMap Atlas">
+<meta property="og:description" content="An interactive, shareable map of our Minecraft world.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%230f1115'/><rect x='3' y='3' width='4.5' height='4.5' fill='%235eb85e'/><rect x='8.5' y='8.5' width='4.5' height='4.5' fill='%235eb85e'/></svg>">
+<link rel="stylesheet" href="assets/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <h1 id="world-title">JourneyMap Atlas</h1>
+      <div class="sub" id="world-sub">loading…</div>
+    </div>
+
+    <div class="panel-scroll">
+      <section class="group">
+        <h2>Dimension</h2>
+        <div class="dims" id="dims"></div>
+      </section>
+
+      <section class="group">
+        <h2>Map layer</h2>
+        <div class="layers" id="layers"></div>
+      </section>
+
+      <section class="group">
+        <h2>Waypoints <span id="wp-count" class="count"></span></h2>
+        <div class="wp-tools">
+          <input type="search" id="wp-search" placeholder="Search waypoints…" autocomplete="off">
+        </div>
+        <div class="wp-list" id="wp-list"></div>
+        <label class="toggle-row">
+          <input type="checkbox" id="wp-all-dims"> Show waypoints from all dimensions
+        </label>
+      </section>
+
+      <section class="group">
+        <h2>Overlays</h2>
+        <label class="toggle-row">
+          <input type="checkbox" id="opt-grid"> Region &amp; chunk grid
+        </label>
+        <label class="toggle-row">
+          <input type="checkbox" id="opt-labels" checked> Waypoint labels
+        </label>
+      </section>
+    </div>
+
+    <div class="foot">
+      <div id="foot-generated">—</div>
+      <div>Click anywhere on the map to copy coordinates.</div>
+    </div>
+  </aside>
+
+  <div id="map-wrap">
+    <button id="menu-btn" aria-label="Toggle sidebar">☰</button>
+    <div id="map"></div>
+    <div class="readout" id="readout">X <b>—</b> &nbsp; Z <b>—</b></div>
+    <div class="hint" id="hint">Scroll to zoom · drag to pan</div>
+    <div id="toast"></div>
+  </div>
+</div>
+
+<script src="assets/leaflet.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
