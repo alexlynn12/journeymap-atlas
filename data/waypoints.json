@@ -1,0 +1,35 @@
+{
+ "waypoints": [
+  {
+   "id": "445b8eae-6bd1-4a39-b437-9cf43d3e1913",
+   "name": "Death 12:49:30 09-09-2026",
+   "x": 86,
+   "y": 42,
+   "z": 0,
+   "dimension": "the_nether",
+   "dimensions": [
+    "the_nether"
+   ],
+   "group": "journeymap_death",
+   "color": "#643c2b",
+   "death": true
+  }
+ ],
+ "groups": [
+  {
+   "id": "journeymap_all",
+   "name": "All",
+   "color": null
+  },
+  {
+   "id": "journeymap_death",
+   "name": "Death",
+   "color": "#ff0000"
+  },
+  {
+   "id": "journeymap_default",
+   "name": "Default",
+   "color": null
+  }
+ ]
+}
