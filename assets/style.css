@@ -367,7 +367,16 @@ input:focus { outline: none; border-color: var(--accent-dim); }
   pointer-events: none;
 }
 
-.wp-marker.hide-label .lbl { display: none; }
+.wp-marker.hide-label .lbl,
+.leaflet-container.far .wp-marker .lbl { display: none; }
+
+/* Zoomed out, names are hidden to stop twenty labels piling up — but hovering
+   a dot always names it. */
+.wp-marker:not(.hide-label) .pin:hover + .lbl { display: block; }
+
+.wp-marker .pin:hover {
+  transform: scale(1.25);
+}
 
 .leaflet-popup-content-wrapper {
   background: var(--panel);

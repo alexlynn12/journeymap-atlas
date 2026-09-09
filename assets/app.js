@@ -19,6 +19,7 @@
   var NATIVE_ZOOM = 0;
   var MIN_ZOOM = -4;
   var MAX_ZOOM = 4;
+  var LABEL_MIN_ZOOM = 0;
 
   var CRS = L.extend({}, L.CRS.Simple, {
     transformation: new L.Transformation(1, 0, 1, 0)
@@ -520,6 +521,16 @@
     });
 
     map.on("moveend zoomend", writeHash);
+
+    // Twenty waypoints in one valley turn into a wall of text when zoomed out,
+    // so labels fade below this zoom and only the dots remain.
+    function syncLabelZoom() {
+      var el = map.getContainer();
+      if (map.getZoom() < LABEL_MIN_ZOOM) el.classList.add("far");
+      else el.classList.remove("far");
+    }
+    map.on("zoomend", syncLabelZoom);
+    syncLabelZoom();
 
     map.on("click", function (e) {
       var x = Math.floor(e.latlng.lng), z = Math.floor(e.latlng.lat);
