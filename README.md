@@ -55,20 +55,30 @@ possible to bootstrap this repo through GitHub's web uploader.
 
 ## Updating the map
 
-Run the build against your JourneyMap folder and push:
+On Windows, `tools/sync.ps1` does the whole thing — rebuild, commit, push — and
+does nothing if the map hasn't changed:
+
+```powershell
+git clone https://github.com/alexlynn12/journeymap-atlas.git
+cd journeymap-atlas
+.\tools\sync.ps1
+```
+
+To have it run by itself every morning, once, from that folder:
+
+```powershell
+.\tools\sync.ps1 -InstallSchedule -At 04:00
+```
+
+That registers a Windows scheduled task called "JourneyMap Atlas sync". Remove
+it with `Unregister-ScheduledTask -TaskName 'JourneyMap Atlas sync'`.
+
+Or drive the build yourself, on any platform:
 
 ```bash
 python3 -m pip install nbtlib
 python3 tools/build.py --journeymap "$APPDATA/.minecraft/journeymap" --out .
 git add -A && git commit -m "Sync map" && git push
-```
-
-On Windows (PowerShell):
-
-```powershell
-python -m pip install nbtlib
-python tools\build.py --journeymap "$env:APPDATA\.minecraft\journeymap" --out .
-git add -A; git commit -m "Sync map"; git push
 ```
 
 Options:
